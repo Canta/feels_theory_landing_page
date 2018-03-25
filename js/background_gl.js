@@ -340,7 +340,10 @@ function BackgroundGL($data){
     this.lContext.compileShader( shader );
 
     if ( !this.lContext.getShaderParameter( shader, this.lContext.COMPILE_STATUS ) ) {
-      console.error("Error al intentar crear el shader.");
+      console.error( 
+        "Error al intentar crear el shader.", 
+        this.lContext.getShaderInfoLog(shader) 
+      );
       return null;
     }
     return shader;
