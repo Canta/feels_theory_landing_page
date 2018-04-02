@@ -15,7 +15,7 @@ body{
   margin:0 auto; 
   text-align:center; 
   vertical-align: center;
-  font-family: "Jura";
+  font-family: "Aroania";
   overflow:hidden;
 }
 
@@ -34,10 +34,19 @@ body > * {
 }
 
 @font-face {
-  font-family:"Technique OL BRK";
-  src:  url('techniqo-webfont.woff') format('woff'),
-      url('techniqo-webfont.ttf') format('truetype'),
-      url('techniqo-webfont.svg#TechniqueOLBRKNormal') format('svg');
+  font-family:"Aroania";
+  src:  url('Ariania_R.woff') format('woff'),
+      url('Ariania_R.ttf') format('truetype'),
+      url('Aroania_R.svg#Aroania') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Ubuntu";
+  src:  url('Ubuntu-Bold.woff') format('woff'),
+      url('Ubuntu-Bold.ttf') format('truetype'),
+      url('Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -136,7 +145,7 @@ body > * {
 
 
 #titulo{
-  font-family: "Technique OL BRK";
+  font-family: "Ubuntu";
   font-size: 42px;
   -moz-text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
   -webkit-text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
@@ -205,7 +214,7 @@ body > * {
   text-align:center;
   left: 0px;
   display: inline-block;
-  font-family: "Technique OL BRK";
+  font-family: "Aroania";
   font-size: 18px;
   width:100%;
 }
