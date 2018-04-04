@@ -20,8 +20,8 @@
       
       @font-face {
         font-family:"Aroania";
-        src:  url('./css/Ariania_R.woff') format('woff'),
-            url('./css/Ariania_R.ttf') format('truetype'),
+        src:  url('./css/Aroania_R.woff') format('woff'),
+            url('./css/Aroania_R.ttf') format('truetype'),
             url('./css/Aroania_R.svg#Aroania') format('svg');
         font-weight: normal;
         font-style: normal;
@@ -180,20 +180,38 @@
         width       : 80%;
         left        : 10%;
         top         : 5%;
-        height      : 90%;
+        height      : 80%;
         overflow    : auto;
         color       : black;
         text-align  : justify;
-        padding     : 20px;
         
         font-family : sans, verdana, helvetica;
-        font-size   : 1vw;
+        font-size   : 2vw;
         background-color  : rgba(255,255,255,0.7);
         border-radius     : 25px;
         border            : white solid 0.2em;
         -moz-box-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
         -webkit-box-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
         box-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+      }
+      
+      .cuerpo-seccion button{
+        width: 15vw;
+        font-size: 2vw;
+        border-radius: 25px;
+      }
+      
+      .cuerpo-seccion > p {
+        position: relative;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+      }
+      
+      .cuerpo-seccion  img {
+        position: relative;
+        margin: auto;
+        max-width: 90%;
       }
     </style>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
@@ -751,7 +769,7 @@
         <p>Por esa razón, estás viendo en el fondo una imagen triste y gris de un señor que trabaja sólo con una computadora vieja, perdido en el tiempo, y sin esperanzas.</p>
         <p></p>
         <p>Estoy trabajando para hacer que el código de esta página ande también en otras compus más desactualizadas, con WebGL1. Pero mientras tanto, vas a tener que conformarte con esto que estás viendo.</p>
-        <p>En caso de tener dudas sobre qué le puede estar pasando a tu compu, te recomiendo este link: <a href="https://get.webgl.org/">https://get.webgl.org/</a>.</p>
+        <p>En caso de tener dudas sobre qué le puede estar pasando a tu compu, te recomiendo este link: <a target="_blank" href="https://get.webgl.org/webgl2/">https://get.webgl.org/webgl2/</a>.</p>
         <p></p>
         <p style="text-align:center;"><button onclick="seccion_handler('atras');">Entendí</button></p>
       </div>
@@ -764,7 +782,7 @@
         <p>Como decía, a partir de algunas reflexiones históricas sobre cuestiones vinculadas a la verdad, mediadas mayormente por problemas de la tecnología y de la política, me permito plantear algunos aspectos de la verdad que con el paso de los años no veo a nadie planteándolo con mucho énfasis por ningún lado.</p>
         <p>Existen discursos afines. Pero lo que planteo formalmente en este texto, no tengo registro de que se tome como principio en ninguna disciplina actual.</p>
         <p></p>
-        <p>Las ideas en este libro datan de mucho tiempo. En <a href="https://blog.canta.com.ar">mi blog</a> pueden encontrar múltiples recortes de las cosas que planteo con mejor estructura en este libro. Y, como mencionara anteriormente, el vínculo entre tecnología, verdad, y política, está muy vivo en este momento de la historia, de la mano de la idea de "posverdad".</p>
+        <p>Las ideas en este libro datan de mucho tiempo. En <a target="_blank" href="https://blog.canta.com.ar">mi blog</a> pueden encontrar múltiples recortes de las cosas que planteo con mejor estructura en este libro. Y, como mencionara anteriormente, el vínculo entre tecnología, verdad, y política, está muy vivo en este momento de la historia, de la mano de la idea de "posverdad".</p>
         <p>De modo que aprovecho ese envión que me tocó vivir, y arranco desmenuzando de a poquito la posverdad, para eventualmente comenzar a explorar aspectos positivos de la verdad.</p>
         <p>Así, usando a la posverdad, en este texto voy a poder unir verdad y sentimentalidad. El objetivo es seguir un camino de reflexiones que en algún futuro permita integrar la sentimentalidad a un modelo de inteligencia artificial; o cuanto menos sumar un granito de arena a algunas causas decentes, como la comprensión del ser humano.</p>
         <p></p>
@@ -784,7 +802,7 @@
         <p>Estudié Letras en la UBA durante unos años, hasta que deserté.</p>
         <p>Más tarde estudié la carrera de Técnico Superior en Robótica, donde me recibí junto con mi esposa. Y en un año y medio confiamos en ser ambos Licenciados en Automatización.</p>
         <p>En el camino de esas cosas tuve mucho contacto con problemas de diferentes filosofías, corrientes políticas, psicologías, y tecnologías.</p>
-        <p>Podría ponerme a hablar detalles... pero no lo voy a hacer. Si por alguna bizarra razón a alguien le interesa, mi currículum es de público acceso, acá: <a href="https://canta.com.ar/cv.pdf">https://canta.com.ar/cv.pdf</a></p>
+        <p>Podría ponerme a hablar detalles... pero no lo voy a hacer. Si por alguna bizarra razón a alguien le interesa, mi currículum es de público acceso, acá: <a target="_blank" href="https://canta.com.ar/cv.pdf">https://canta.com.ar/cv.pdf</a></p>
         <p style="text-align:center;"><button onclick="seccion_handler('atras');">Volver</button></p>
       </div>
     </div>
@@ -792,20 +810,21 @@
       <div class="cuerpo-seccion">
         <p>A Canta se lo puede encontrar por varios lados.</p>
         <p>En primer lugar, vía correo electrónico: canta arroba canta punto com punto ar. No escribo la dirección para que no la boteen. Y si no sabés lo que es un bot, o qué es botear, buscalo en internet.</p>
-        <p>Luego, está el blog, donde de vez en cuando escribe cosas: <a href="https://blog.canta.com.ar">https://blog.canta.com.ar</a>.</p>
-        <p>También solía andar por <a href="http://www.forofyl.com.ar">ForoFyL</a>, pero hace rato que no entra porque medio que se enculó.</p>
-        <p>Esporádicamente, cuando sus tiempos le permiten dedicarse a sus proyectos de tecnología, suele subir cualquier porquería de código a su espacio en github: <a href="https://github.com/Canta">https://github.com/Canta</a>.</p>
-        <p>En rigor, uno debería poder contactarlo en su página personal: <a href="https://canta.com.ar">https://canta.com.ar</a>. Pero nunca se puso las pilas para hacerla. De una manera u otra, hace un tiempo está la versión soviética: <a href="http://canta.su">http://canta.su</a>. Esa anda, y no se me ocurren muchas razones por las que pudiera cambiar.</p>
-        <p>Y después de eso, muy de vez en cuando entra en <a href="https://webchat.freenode.net/">IRC (freenode)</a>, donde difícilmente lo vayas a encontrar porque le gusta cambiar de nick y de canal.</p>
+        <p>Luego, está el blog, donde de vez en cuando escribe cosas: <a target="_blank" href="https://blog.canta.com.ar">https://blog.canta.com.ar</a>.</p>
+        <p>También solía andar por <a target="_blank" href="http://www.forofyl.com.ar">ForoFyL</a>, pero hace rato que no entra porque medio que se enculó.</p>
+        <p>Esporádicamente, cuando sus tiempos le permiten dedicarse a sus proyectos de tecnología, suele subir cualquier porquería de código a su espacio en github: <a target="_blank" href="https://github.com/Canta">https://github.com/Canta</a>.</p>
+        <p>En rigor, uno debería poder contactarlo en su página personal: <a target="_blank" href="https://canta.com.ar">https://canta.com.ar</a>. Pero nunca se puso las pilas para hacerla. De una manera u otra, hace un tiempo está la versión soviética: <a target="_blank" href="http://canta.su">http://canta.su</a>. Esa anda, y no se me ocurren muchas razones por las que pudiera cambiar.</p>
+        <p>Y después de eso, muy de vez en cuando entra en <a target="_blank" href="https://webchat.freenode.net/">IRC (freenode)</a>, donde difícilmente lo vayas a encontrar porque le gusta cambiar de nick y de canal.</p>
         <p>Es sumamente extraño que lo vayas a ver por Facebook, Twitter, o cualquiera de esas porquerías. Pero como hay gente que sólo habla por ahí, a veces les concedo un mensaje para no ser un ogro. Igualmente, eso sucede una vez cada muerte de obispo.</p>
         <p style="text-align:center;"><button onclick="seccion_handler('atras');">Volver</button></p>
       </div>
     </div>
     <div id="descargar-container" class="total seccion">
       <div class="cuerpo-seccion">
-        <p>Para descargar el libro completo, siga el siguiente link: </p>
-        <p style="text-align:center;"><a href="https://canta.com.ar/feels_theory/feels_theory.pdf">https://canta.com.ar/feels_theory/feels_theory.pdf</a></p>
-        <p>Actualmente sólo está online en formato PDF. Esto no es así por voluntad propia, sino por detalles técnicos y legales de publicación; básicamente, hay que hacer más trámites para tener más formatos, y no los tengo tan estudiados como a mí me gustaría.</p>
+        <p>Para descargar el libro completo, siga el siguiente link, o bien hágale un click a la imagen: </p>
+        <p style="text-align:center;"><a target="_blank" href="https://canta.com.ar/feels_theory/feels_theory.pdf">https://canta.com.ar/feels_theory/feels_theory.pdf</a></p>
+        <p style="text-align:center;"><a target="_blank" href="https://canta.com.ar/feels_theory/feels_theory.pdf"><img src="images/book-canta.png" style="width:150px;"/></a></p>
+        <p>Actualmente sólo está online en formato PDF. Esto no es así por voluntad propia, sino por detalles técnicos y legales de publicación; básicamente, hay que hacer más trámites para tener más formatos, y no los tengo tan estudiados como a mí me gustaría (ni a los trámites, ni a los formatos).</p>
         <p></p>
         <p>Periódicamente iré publicando en esta misma sección actualizaciones.</p>
         
